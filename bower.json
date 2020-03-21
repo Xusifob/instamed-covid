@@ -1,0 +1,21 @@
+{
+  "name": "instamed-covid",
+  "homepage": "https://github.com/Xusifob/instamed-covid",
+  "authors": [
+    "Bastien Malahieude <b.malahieude@free.fr>"
+  ],
+  "description": "Web app for instamed to manage coronavirus",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  }
+}
