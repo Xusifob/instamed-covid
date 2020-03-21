@@ -23,7 +23,7 @@ $(document).ready(function () {
         } else if (score <= 4) {
             result = 'Prenez contact avec votre médecin traitant ou avec le médecin de garde si votre médecin n’est pas disponible. En cas de doute, appelez le 15'
         } else {
-            result = 'Appelez le 15';
+            result = '<span class="red">Appelez le 15</span>';
         }
 
         $('#result strong').html(result);
