@@ -10,6 +10,12 @@ $(document).ready(function () {
 
     });
 
+    $('#restart').on('click',function () {
+        $('#intro').fadeIn(200);
+        $('#result').fadeOut(200);
+        console.log('kiwi');
+    });
+
     $form.on('submit',function () {
 
         let score = calculateScore();
@@ -21,13 +27,14 @@ $(document).ready(function () {
         if(score <= 1 ) {
             result = 'Poursuivez la surveillance en remplissant ce questionnaire le matin et le soir';
         } else if (score <= 4) {
-            result = 'Prenez contact avec votre médecin traitant ou avec le médecin de garde si votre médecin n’est pas disponible. En cas de doute, appelez le 15'
+            result = 'Prenez contact avec votre médecin traitant ou avec le médecin de garde si votre médecin n’est pas disponible. En cas de doute, appelez le 15.'
         } else {
-            result = '<span class="red">Appelez le 15</span>';
+            result = 'Veuillez appelez le 15';
         }
 
         $('#result strong').html(result);
         $('#result').fadeIn(200);
+        $('#intro').fadeOut(200);
 
         return false;
 

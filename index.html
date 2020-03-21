@@ -24,19 +24,20 @@
         </div>
 
         <a href="http://www.chru-strasbourg.fr/poles/Urgences-SAMU-67-medecine-intensive-et-reanimation" target="_blank" >
-            <img src="src/img/samu-67.jpeg" class="logo-samu">
+            <img src="src/img/samu.jpeg" class="logo-samu">
         </a>
 
     </header>
+    <div id="intro">
+        <h1 class="text-center">Suivi de l'évolution du Coronavirus</h1>
 
-    <h1 class="text-center">Suivi de l'évolution du Coronavirus</h1>
+        <p class="main">Ce questionnaire a pour but de vous aider à surveiller votre état de santé suite à votre appel au SAMU. Il n’a aucun caractère obligatoire. Personne n’aura accès aux informations que vous renseignez.</p>
+        <p class="main">Le fait de remplir le questionnaire débouchera sur un conseil selon les réponses que vous aurez données. Ce questionnaire peut être rempli autant de fois que vous le souhaitez. Dans le cas d’une suspicion d’infection au COVID-19, il est conseillé de le remplir le matin et le soir. En cas de doute, n’hésitez pas à rappeler le SAMU (15).</p>
 
-    <p class="main">Ce questionnaire a pour but de vous aider à surveiller votre état de santé suite à votre appel au SAMU. Il n’a aucun caractère obligatoire. Personne n’aura accès aux informations que vous renseignez. Le fait de remplir le questionnaire débouchera sur un conseil, selon les réponses que vous aurez données. Ce questionnaire peut être rempli autant de fois que vous le souhaitez. Dans le cas d’une suspicion d’infection au COVID-19, il est conseillé de le remplir le matin et le soir. En cas de doute, n’hésitez pas à rappeler le SAMU (15).</p>
-
-    <div class="text-center">
-        <a href="#start" class="btn btn-success">Commencer</a>
+        <div class="text-center">
+            <a href="#start" class="btn btn-success">Commencer</a>
+        </div>
     </div>
-
     <div class="row">
         <div class="col-sm-6 offset-sm-3">
             <form method="POST" class="box hidden" id="start">
@@ -69,7 +70,7 @@
                     </div>
                     <div class="form-group">
                         <label>L’avez-vous mesurée en intrarectal ou sous le bras ?</label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="mesure" id="intrarectal" required value="0" autocomplete="off" > Intrarectal
                             </label>
@@ -80,7 +81,7 @@
                     </div>
                     <div class="form-group">
                         <label>Avez-vous des frissons ?</label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="frissons" required value="2" autocomplete="off" > Oui
                             </label>
@@ -91,7 +92,7 @@
                     </div>
                     <div class="form-group">
                         <label>Vous sentez-vous essoufflé ou avez-vous du mal à respirer ? </label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="essouflement" required value="5" autocomplete="off" > Oui
                             </label>
@@ -102,7 +103,7 @@
                     </div>
                     <div class="form-group">
                         <label>Avez-vous mal dans la poitrine ?</label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="chest_pain" required value="5" autocomplete="off" > Oui
                             </label>
@@ -113,7 +114,7 @@
                     </div>
                     <div class="form-group">
                         <label>Avez-vous des palpitations  ?</label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="palpitations" required value="5" autocomplete="off" > Oui
                             </label>
@@ -124,7 +125,7 @@
                     </div>
                     <div class="form-group">
                         <label>Avez-vous une sensation de malaise ?</label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="fainting" value="5"  required autocomplete="off" > Oui
                             </label>
@@ -135,7 +136,7 @@
                     </div>
                     <div class="form-group">
                         <label>[si vous surveillez la personne malade] Avez-vous du mal à réveiller et à communiquer avec la personne malade ?</label>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="wake_up" value="5" required autocomplete="off" > Oui
                             </label>
@@ -154,14 +155,43 @@
                 <h2>Votre résultat</h2>
 
                 <p><strong></strong></p>
+
+                <div class="text-center">
+                    <a href="javascript:" id="restart" class="btn btn-success">Recommencer le questionnaire</a>
+                </div>
+
             </div>
         </div>
     </div>
+</div>
 
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="src/img/sauvez-des-vies.jpeg" class="img-responsive" alt="Sauvez des vies">
+            </div>
+            <div class="col-sm-7 col-lg-8">
 
-    <script type="text/javascript" src="src/js/main.js"></script>
+                <p><strong>La prise d'anti-inflammatoires (ibuprofène, cortisone...) pourrait être un facteur d'aggravation de l'infection.</strong></p>
+                <p>De manière générale, l’auto-médication par anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires pourraient être un facteur d’aggravation de l'infection. Ainsi, dans le cas d’une infection au coronavirus COVID-19, le paracétamol est recommandé. Si vous êtes déjà sous anti-inflammatoires ou en cas de doute, demandez conseil à votre médecin.</p>
+
+                <p>Pour plus d'informations, visitez <a href="https://www.gouvernement.fr/info-coronavirus">https://www.gouvernement.fr/info-coronavirus</a></p>
+
+            </div>
+            <div class="col-sm-2 col-lg-1 text-right">
+                <a href="tel:15">
+                    <img src="src/img/logo-15.png" alt="Sauvez des vies">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="src/js/main.js"></script>
 
 </body>
 </html>

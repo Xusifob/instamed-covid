@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url(../../bower_components/bootstrap/dist/css/bootstrap.min.css);
 @font-face {
-  font-family: Gilroy;
+  font-family: "Roboto", sans-serif;
   src: url("../fonts/Gilroy-Light.otf") format("truetype"); }
 @font-face {
   font-family: Gilroy-bold;
@@ -42,7 +43,7 @@ h2 {
   font-family: Gilroy-bold; }
 
 p {
-  font-family: Gilroy; }
+  font-family: "Roboto", sans-serif; }
   p.main {
     margin-top: 25px; }
 
@@ -105,7 +106,7 @@ label {
   display: block; }
 
 input[type="checkbox"] + span, input[type="radio"] + span {
-  font-family: Gilroy;
+  font-family: "Roboto", sans-serif;
   color: #4D4D4D; }
 
 .form-group {
@@ -116,5 +117,18 @@ input[type="checkbox"] + span, input[type="radio"] + span {
 
 .red {
   color: #F85346; }
+
+footer {
+  margin-top: 100px;
+  background: #4D4D4D;
+  padding: 50px 25px; }
+  footer a, footer h2, footer p, footer strong {
+    color: #fdfdfd; }
+  footer a:hover {
+    text-decoration: underline;
+    color: #fdfdfd; }
+
+.img-responsive {
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
