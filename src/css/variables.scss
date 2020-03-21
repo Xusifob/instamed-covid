@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 $grey : #f1f1f1;
 $black : #4D4D4D;
@@ -8,5 +8,5 @@ $light : #fdfdfd;
 $blue : #00a0cc;
 $red: #F85346 !default;
 
-$font-bold : Gilroy-bold;
-$font : 'Roboto', sans-serif;
+$font-bold : 'Roboto', sans-serif;
+$font : $font-bold;

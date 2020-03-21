@@ -1,11 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 @import url(../../bower_components/bootstrap/dist/css/bootstrap.min.css);
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../fonts/Gilroy-Light.otf") format("truetype"); }
-@font-face {
-  font-family: Gilroy-bold;
-  src: url("../fonts/Gilroy-ExtraBold.otf") format("truetype"); }
 body {
   background: #fdfdfd; }
 
@@ -19,7 +13,8 @@ body {
 
 h1 {
   margin-top: 10px;
-  font-family: Gilroy-bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 1.75em;
   color: #00a0cc;
   line-height: 50px;
@@ -34,13 +29,14 @@ h1 {
     margin: 10px auto 20px auto; }
 
 strong {
-  font-family: Gilroy-bold; }
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
 
 h2 {
   font-size: 1.2em;
   color: #37dcb4;
   font-weight: bold;
-  font-family: Gilroy-bold; }
+  font-family: "Roboto", sans-serif; }
 
 p {
   font-family: "Roboto", sans-serif; }
@@ -72,7 +68,7 @@ header {
 
 .btn {
   font-weight: bold;
-  font-family: Gilroy-bold;
+  font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 20px; }
 
@@ -99,15 +95,24 @@ header {
   border: 2px solid #00a0cc; }
 
 label {
-  font-family: Gilroy-bold;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   margin-top: 0;
   color: #00a0cc;
-  display: block; }
+  display: block;
+  font-weight: bold; }
 
 input[type="checkbox"] + span, input[type="radio"] + span {
   font-family: "Roboto", sans-serif;
-  color: #4D4D4D; }
+  color: #4D4D4D;
+  font-weight: normal; }
+
+.bg-green {
+  background: #37dcb4;
+  padding: 15px;
+  margin-bottom: 15px; }
+  .bg-green p {
+    margin: 0; }
 
 .form-group {
   margin-bottom: 30px; }
