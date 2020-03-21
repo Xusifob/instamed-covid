@@ -65,7 +65,7 @@ p {
 }
 
 header {
-  padding: 15px;
+  padding: 15px 0;
   background: $white;
   .logo {
     border-right: 1px solid $green;
@@ -74,14 +74,24 @@ header {
     padding-left: 0;
     width: 23%;
     text-align: right;
-
-    &:after {
-      clear: both;
+    @media(max-width: 768px) {
+      width: auto;
     }
   }
   img {
     height: 58px;
+    @media(max-width: 768px) {
+      &.logo-samu {
+        float: right;
+      }
+    }
   }
+  &:after {
+    clear: both;
+    content :"";
+    display: block;
+  }
+
 }
 
 .btn {
