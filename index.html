@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questionnaire de suivi du Coronavirus</title>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+    <header>
+        <div class="logo">
+            <a href="/" class="no-shadow">
+                <img src="src/img/logo_instamed.png" class="logo-desktop">
+            </a>
+        </div>
+
+        <a href="http://www.chru-strasbourg.fr/poles/Urgences-SAMU-67-medecine-intensive-et-reanimation" target="_blank" >
+            <img src="src/img/samu-67.jpeg">
+        </a>
+
+    </header>
+
+    <h1 class="text-center">Suivi de l'évolution du Coronavirus</h1>
+
+    <p class="main">Ce questionnaire a pour but de vous aider à surveiller votre état de santé suite à votre appel au SAMU. Il n’a aucun caractère obligatoire. Personne n’aura accès aux informations que vous renseignez. Le fait de remplir le questionnaire débouchera sur un conseil, selon les réponses que vous aurez données. Ce questionnaire peut être rempli autant de fois que vous le souhaitez. Dans le cas d’une suspicion d’infection au COVID-19, il est conseillé de le remplir le matin et le soir. En cas de doute, n’hésitez pas à rappeler le SAMU (15).</p>
+
+    <div class="text-center">
+        <a href="#start" class="btn btn-success">Commencer</a>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="POST" class="box hidden" id="start">
+                <div class="form-group">
+                    <label for="age">Quel est votre âge ? </label>
+                    <input type="number" step="1" required class="form-control" id="age" placeholder="78">
+                </div>
+                <div class="form-group">
+                    <label>Quels sont vos antécédents ?</label>
+
+                    <label>
+                        <input type="checkbox" name="antecedents[]" value="1" >
+                        <span>Asthme</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="antecedents[]" value="1" >
+                        <span>Cancer ou autre cause d’affaiblissement des défenses immunitaires</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="antecedents[]" value="1" >
+                        <span>Grossesse</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="antecedents[]" value="1" >
+                        <span>Traitement pas antiinflammatoires non stéroidiens (par exemple : Apranax, Bi profenid, Celebrex, Diclofenac, Ibuprofène, Nifluril, Profenid, Voltarène)</span>
+                    </label>
+                    <div class="form-group">
+                        <label for="temperature" required>Quelle est votre température ?</label>
+                        <input type="number" min="35" max="45" step="0.1" class="form-control" id="temperature" placeholder="37.5">
+                    </div>
+                    <div class="form-group">
+                        <label>L’avez-vous mesurée en intrarectal ou sous le bras ?</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="intrarectal" id="intrarectal" value="0" autocomplete="off" > Intrarectal
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="under_arm" value="0" autocomplete="off"> Sous le bras
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Avez-vous des frissons ?</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="frissons" required value="2" autocomplete="off" > Oui
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="frissons" required value="0" autocomplete="off"> Non
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Vous sentez-vous essoufflé ou avez-vous du mal à respirer ? </label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="essouflement" required value="5" autocomplete="off" > Oui
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="essouflement" required value="0" autocomplete="off"> Non
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Avez-vous mal dans la poitrine ?</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="chest_pain" required value="5" autocomplete="off" > Oui
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="chest_pain" required value="0" autocomplete="off"> Non
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Avez-vous des palpitations  ?</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="palpitations" required value="5" autocomplete="off" > Oui
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="palpitations" required value="0" autocomplete="off"> Non
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Avez-vous une sensation de malaise ?</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="fainting" value="5"  required autocomplete="off" > Oui
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="fainting" value="0" required autocomplete="off"> Non
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>[si vous surveillez la personne malade] Avez-vous du mal à réveiller et à communiquer avec la personne malade ?</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="fainting" value="5" required autocomplete="off" > Oui
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="fainting" value="0" required autocomplete="off"> Non
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" class="btn btn-success" value="Valider le questionnaire" >
+                    </div>
+                </div>
+            </form>
+
+            <div class="box hidden" id="result">
+                <h2>Votre résultat</h2>
+
+                <p><strong></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="src/js/main.js"></script>
+
+</body>
+</html>

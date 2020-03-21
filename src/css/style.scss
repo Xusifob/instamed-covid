@@ -1,0 +1,145 @@
+@import "variables";
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: $font;
+  src: url('../fonts/Gilroy-Light.otf') format("truetype");
+}
+
+
+@font-face {
+  font-family: $font-bold;
+  src: url('../fonts/Gilroy-ExtraBold.otf') format("truetype");
+}
+
+body {
+  background: $light;
+}
+
+.box {
+  background-color: $grey;
+  border-radius: 15px;
+  padding: 22px;
+  margin-bottom: 30px;
+  color: $black;
+  margin-top: 50px;
+}
+
+
+h1 {
+  margin-top: 10px;
+  font-family: $font-bold;
+  font-size: 1.75em;
+  color: $blue;
+  line-height: 50px;
+  margin-bottom: 0;
+
+  &:after {
+    border-bottom: 5px solid;
+    color: $blue;
+    width: 95px;
+    content: "";
+    display: block;
+    text-align: center;
+    margin: 10px auto 20px auto;
+  }
+}
+
+strong {
+  font-family: $font-bold;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: $green;
+  font-weight: bold;
+  font-family: $font-bold;
+}
+
+p {
+  font-family: $font;
+
+  &.main {
+    margin-top: 25px;
+  }
+}
+
+header {
+  padding: 15px;
+  background: $white;
+  .logo {
+    border-right: 1px solid $green;
+    float: left;
+    margin-right: 15px;
+    padding-left: 0;
+    width: 23%;
+    text-align: right;
+
+    &:after {
+      clear: both;
+    }
+  }
+  img {
+    height: 58px;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  font-family: $font-bold;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-success {
+  color: $white;
+  background: $green;
+
+  &:active {
+    background: darken($green,10);
+  }
+}
+
+.btn-primary {
+  color: $white;
+  background: $blue;
+
+  &:active {
+    background: darken($blue,10);
+  }
+}
+
+
+.form-control {
+  margin-bottom: 25px;
+  background-color: $white;
+  line-height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  color: $blue;
+  padding-left: 7px;
+  border: 2px solid $blue;
+}
+
+label {
+  font-family: $font-bold;
+  font-size: 1em;
+  margin-top: 0;
+  color: $blue;
+  display: block;
+}
+
+input[type="checkbox"] ,input[type="radio"] {
+  + span {
+    font-family: $font;
+    color: $black;
+  }
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}

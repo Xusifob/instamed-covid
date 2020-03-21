@@ -1,0 +1,109 @@
+@import url(../../bower_components/bootstrap/dist/css/bootstrap.min.css);
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy-Light.otf") format("truetype"); }
+@font-face {
+  font-family: Gilroy-bold;
+  src: url("../fonts/Gilroy-ExtraBold.otf") format("truetype"); }
+body {
+  background: #fdfdfd; }
+
+.box {
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  padding: 22px;
+  margin-bottom: 30px;
+  color: #4D4D4D;
+  margin-top: 50px; }
+
+h1 {
+  margin-top: 10px;
+  font-family: Gilroy-bold;
+  font-size: 1.75em;
+  color: #00a0cc;
+  line-height: 50px;
+  margin-bottom: 0; }
+  h1:after {
+    border-bottom: 5px solid;
+    color: #00a0cc;
+    width: 95px;
+    content: "";
+    display: block;
+    text-align: center;
+    margin: 10px auto 20px auto; }
+
+strong {
+  font-family: Gilroy-bold; }
+
+h2 {
+  font-size: 1.2em;
+  color: #37dcb4;
+  font-weight: bold;
+  font-family: Gilroy-bold; }
+
+p {
+  font-family: Gilroy; }
+  p.main {
+    margin-top: 25px; }
+
+header {
+  padding: 15px;
+  background: white; }
+  header .logo {
+    border-right: 1px solid #37dcb4;
+    float: left;
+    margin-right: 15px;
+    padding-left: 0;
+    width: 23%;
+    text-align: right; }
+    header .logo:after {
+      clear: both; }
+  header img {
+    height: 58px; }
+
+.btn {
+  font-weight: bold;
+  font-family: Gilroy-bold;
+  border: none;
+  border-radius: 20px; }
+
+.btn-success {
+  color: white;
+  background: #37dcb4; }
+  .btn-success:active {
+    background: #21bf99; }
+
+.btn-primary {
+  color: white;
+  background: #00a0cc; }
+  .btn-primary:active {
+    background: #007899; }
+
+.form-control {
+  margin-bottom: 25px;
+  background-color: white;
+  line-height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  color: #00a0cc;
+  padding-left: 7px;
+  border: 2px solid #00a0cc; }
+
+label {
+  font-family: Gilroy-bold;
+  font-size: 1em;
+  margin-top: 0;
+  color: #00a0cc;
+  display: block; }
+
+input[type="checkbox"] + span, input[type="radio"] + span {
+  font-family: Gilroy;
+  color: #4D4D4D; }
+
+.form-group {
+  margin-bottom: 30px; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
